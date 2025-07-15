@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo element</title>
+    <style>
+        h3::after{
+            content: ".pdf";
+            color: red;
+            font-size: 20px;
+        }
+        h3::before{
+            content: 'start:';
+        }
+        p::first-letter{
+            font-size: 3em;
+            color: blueviolet;
+        }
+        ::selection{
+            background-color: yellowgreen;
+        }
+        input::placeholder{
+            color: red;
+        }
+        .btn{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        button{
+            background-color: greenyellow;
+            padding: 20px;
+            border-radius: 10px;
+            border: none;
+            font-size: 1em;
+        }
+        button:hover{
+            font-weight: bolder;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>Heading 1</h3>
+    <h3>Heading 2</h3>
+    <h3>Heading 3</h3>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iste, consequatur optio illo impedit possimus distinctio quia temporibus perspiciatis doloribus!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta est autem non iure dolores mollitia, at doloribus earum. Modi qui voluptatibus accusamus animi fugit tenetur, unde vel voluptatum dolorum libero.</p>
+    
+    <input type="email" name="" id="" placeholder="Your mail">
+    
+    <div class="btn">
+        <button onclick="getDiscount()">
+            Get Discount
+        </button>
+    </div>
+    <script>
+        alert("Welcome to my page");
+        function getDiscount (){
+            alert("CODE: PULAK50");
+        }
+    </script>
+    
+    
+</body>
+</html>
